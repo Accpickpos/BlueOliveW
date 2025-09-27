@@ -1,13 +1,15 @@
 interface FeatureCardProps {
   title: string;
   description: string;
+  icon?: React.ReactNode;
 }
 
-export default function FeatureCard({ title, description }: FeatureCardProps) {
+export default function FeatureCard({ title, description, icon }: FeatureCardProps) {
   return (
-    <div className="border rounded-lg p-6 shadow hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-    </div>
+    <article className="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col gap-3">
+      {icon && <div className="text-blue-600 text-3xl">{icon}</div>}
+      <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+      <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+    </article>
   );
 }
