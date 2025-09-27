@@ -15,7 +15,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   if (!product) return notFound();
 
   return (
-    <div className="container mx-auto px-6 py-10">
+    <div className="container mx-auto bg-gray-100 text-gray-900 px-6 py-10">
       <Link href="/shop" className="text-blue-600 hover:underline">
         ← Back to Shop
       </Link>

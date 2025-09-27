@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FeaturesPage() {
   return (
-    <section className="relative w-full h-[60vh] flex items-center justify-center text-white">
+    <section className="relative w-full h-[60vh] flex items-center justify-center bg-gray-100 text-gray-900">
       {/* Background Image */}
       <Image
         src="/features.jpg"

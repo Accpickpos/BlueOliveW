@@ -23,7 +23,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-gray-100 text-gray-900">
       {/* Header Section */}
       <div className="relative h-[800px] bg-black">
         <img
@@ -41,7 +41,7 @@ export default function ContactPage() {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="flex-1 bg-black p-6 shadow-md rounded-lg space-y-4"
+          className="flex-1 bg-gray-100 p-6 shadow-md rounded-lg space-y-4"
         >
           <h2 className="text-xl font-bold mb-4">Send a Message</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -51,7 +51,7 @@ export default function ContactPage() {
               placeholder="Name*"
               value={form.name}
               onChange={handleChange}
-              className="border p-2 rounded w-full"
+              className="border-2 p-2 rounded w-full"
               required
             />
             <input
@@ -60,7 +60,7 @@ export default function ContactPage() {
               placeholder="Email*"
               value={form.email}
               onChange={handleChange}
-              className="border p-2 rounded w-full"
+              className="border-2 p-2 rounded w-full"
               required
             />
             <input
@@ -69,7 +69,7 @@ export default function ContactPage() {
               placeholder="Subject*"
               value={form.subject}
               onChange={handleChange}
-              className="border p-2 rounded w-full"
+              className="border-2 p-2 rounded w-full"
               required
             />
             <input
@@ -78,7 +78,7 @@ export default function ContactPage() {
               placeholder="Phone*"
               value={form.phone}
               onChange={handleChange}
-              className="border p-2 rounded w-full"
+              className="border-2 p-2 rounded w-full"
               required
             />
           </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
             placeholder="Message here"
             value={form.message}
             onChange={handleChange}
-            className="border p-2 rounded w-full h-28"
+            className="border-2 p-2 rounded w-full h-28"
           />
           <button
             type="submit"
@@ -98,23 +98,28 @@ export default function ContactPage() {
         </form>
 
         {/* Contact Info */}
-        <div className="flex-1 bg-blue-600 text-white p-6 rounded-lg flex flex-col justify-center gap-4">
-          <h2 className="text-xl font-bold">Say Hello to Us</h2>
+        <div className="flex-1 bg-gray-200 text-gray-900 p-6 rounded-lg flex flex-row gap-6">
+          {/* Left side: text */}
+          <div className="flex-1 flex flex-col justify-center gap-4">
+            <h2 className="text-xl font-bold">Say Hello to Us</h2>
 
-          <div className="flex items-center gap-4">
-            <Phone /> 
-            <span>+27 33 940 1900</span>
-            <img src="/bluelogo.jpeg" alt="Blue Logo" className="h-[80px]" />
-            
+            <div className="flex items-center gap-4">
+              <Phone />
+              <span>+27 33 940 1900</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Mail />
+              <span>admin@accpick.co.za</span>
+            </div>
           </div>
-          <div className="flex items-center gap-4"></div>
-          <div className="flex items-center gap-4">
-            <Mail /> 
-            <span>admin@accpick.co.za</span>
-            
-            
+
+          {/* Right side: image */}
+          <div className="flex-1 flex items-center justify-center">
+            <img src="/bluelogo.jpeg" alt="Blue Logo" className="h-[80px]" />
           </div>
         </div>
+
       </div>
     </div>
   );
