@@ -13,7 +13,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "15″ All-in-One Touch Terminal",
-    description: "Fanless Design with Intel® i5 4250U 2,60Ghz CPU",
+    description: "All-in-One POS Terminal with Intel Celeron J1900",
     image: "/allin.png",
     price: 3799,
     oldPrice: 4999,
@@ -22,7 +22,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "All-in-One PC AIO-2200",
-    description: "AMD AM4 Socket A520 Micro-ATX Desktop Motherboard",
+    description: "All-in-One POS Terminal ",
     image: "/all.jpg",
     price: 1299,
     oldPrice: 2249,
@@ -30,8 +30,8 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: "Gigabyte B850 EAGLE WIFI6E",
-    description: "AMD B850 Ryzen Socket AM5 ATX Desktop Motherboard",
+    name: "SEWOO LK-P21",
+    description: "Thermal Receipt Printer",
     image: "/lk.jpeg",
     price: 4399,
     oldPrice: 5249,
@@ -39,8 +39,8 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: "MSI PRO H610M-S DDR4",
-    description: "Intel H610 Raptor Lake LGA 1700 Micro-ATX Desktop",
+    name: "SWEOO LK-P31",
+    description: "Thermal Receipt Printer",
     image: "/lk.jpeg",
     price: 1549,
     oldPrice: 1999,
