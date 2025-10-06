@@ -1,5 +1,6 @@
 import HeroCarousel from "@/components/Hero";
 
+
 export default function Accpick() {
 return (
     <main className="w-full">
