@@ -1,44 +1,52 @@
-import Head from "next/head";
-
 export default function PricingPage() {
   const plans = [
     {
-      name: "Bronze",
-      type: "Single Store",
+      name: "Business",
       features: [
         "2 Tills",
         "Point of Sale",
         "Stock Control",
         "Debtors",
         "Creditors",
-        "WhatsApp",
-        "Call Center Limited",
-        "And more",
-        "SoftWare Support: Extensive SoftWare support",
-        "Operating System: Windows 7,8,10, Virtual Box",
+        "WhatsApp Support: Limited",
+        "Call Center: Limited",
+        "Software Support: Extensive support",
+        "Operating System: Windows 7, 8, 10, Virtual Box",
       ],
       link: "/contact",
     },
     {
-      name: "Silver",
-      type: "Medium Store",
+      name: "Business Plus",
       features: [
-        "4 Tills",
+        "3-5 Tills",
         "Point of Sale",
         "Stock Control",
         "Debtors",
         "Creditors",
-        "WhatsApp",
-        "Call Center Limited",
-        "And more",
-        "SoftWare Support: Extensive SoftWare support",
-        "Operating System: Windows 7,8,10, Virtual Box",
+        "WhatsApp Support: Limited",
+        "Call Center: Limited",
+        "Software Support: Extensive support",
+        "Operating System: Windows 7, 8, 10, Virtual Box",
       ],
       link: "/contact",
     },
     {
-      name: "Gold",
-      type: "Multi Store",
+      name: "Enterprise",
+      features: [
+        "6-9 Tills",
+        "Point of Sale",
+        "Stock Control",
+        "Debtors",
+        "Creditors",
+        "WhatsApp Support: Unlimited",
+        "Call Center: Unlimited",
+        "Software Support: Extensive support",
+        "Operating System: Windows 7, 8, 10, Virtual Box",
+      ],
+      link: "/contact",
+    },
+    {
+      name: "Enterprise Plus",
       features: [
         "Multi Warehouse",
         "Unlimited Tills",
@@ -46,62 +54,56 @@ export default function PricingPage() {
         "Stock Control",
         "Debtors",
         "Creditors",
-        "WhatsApp",
+        "WhatsApp Support: Unlimited",
         "Call Center: Unlimited",
-        "And more",
-        "SoftWare Support: Extensive SoftWare support",
-        "Operating System: Windows 7,8,10, Virtual Box",
+        "Software Support: Extensive support",
+        "Operating System: Windows 7, 8, 10, Virtual Box",
       ],
       link: "/contact",
     },
   ];
 
   return (
-    <>
-      {/* <Head>
-        <title>Pricing Plans | Accpick</title>
-        <meta name="description" content="Explore our Bronze, Silver, and Gold pricing plans." />
-      </Head> */}
+    <main className="py-12 bg-gray-50 mt-10">
+       {/* Header Section */}
+      <div className="text-center max-w-2xl mx-auto px-4 mb-12">
+        <h1 className="text-3xl font-bold text-gray-800">
+          Select Your Plan Below
+        </h1>
+        <p className="text-gray-600 mt-2">
+          Choose the plan that’s right for you, with the flexibility to upgrade
+          or downgrade anytime. All Accpick paid plans include:
+        </p>
+      </div>
 
-      {/* <header className="bg-blue-700 text-white py-8">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold">Pricing Plans</h1>
-          <p className="mt-2 text-lg">Choose a plan that fits your business needs</p>
-        </div>
-      </header> */}
-
-      <main className="py-12 bg-gray-50">
-        <div className="container mx-auto grid md:grid-cols-3 gap-6 px-4">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className="border border-gray-300 rounded-lg p-6 flex flex-col justify-between shadow-sm hover:shadow-lg transition"
-            >
-              <div>
-                <h2 className="text-center text-cyan-600 font-bold text-2xl mb-2">{plan.name}</h2>
-                <div className="w-2/3 border-t-2 border-gray-400 mx-auto mb-4"></div>
-                <h4 className="text-center text-black text-lg mb-4">{plan.type}</h4>
-                <div className="w-2/3 border-t-2 border-gray-400 mx-auto mb-4"></div>
-                <ul className="list-disc text-black list-inside space-y-2 mb-4">
-                  {plan.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-                <div className="w-2/3 border-t-2 border-gray-400 mx-auto mb-4"></div>
-              </div>
-              <div className="text-center">
-                <a
-                  href={plan.link}
-                  className="inline-block bg-gradient-to-r from-blue-700 to-pink-500 text-white py-2 px-6 rounded-lg transition hover:scale-105"
-                >
-                  Get a Quote
-                </a>
-              </div>
+      <section aria-label="Pricing Plans" className="container mx-auto grid md:grid-cols-4 gap-6 px-4">
+        {plans.map((plan) => (
+          <div
+            key={plan.name}
+            className="border border-gray-300 rounded-lg p-6 flex flex-col justify-between shadow-sm hover:shadow-lg transition"
+          >
+            <div>
+              <h2 className="text-center text-cyan-600 font-bold text-2xl mb-4">
+                {plan.name}
+              </h2>
+              <hr className="border-t-2 border-gray-300 my-4" />
+              <ul className="list-disc text-black list-inside space-y-2 mb-4">
+                {plan.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-      </main>
-
-    </>
+            <div className="text-center">
+              <a
+                href={plan.link}
+                className="inline-block bg-gradient-to-r from-blue-700 to-pink-500 text-white py-2 px-6 rounded-lg transition hover:scale-105"
+              >
+                Get a Quote
+              </a>
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
   );
 }

@@ -19,7 +19,7 @@ export default function Home() {
       {/* Left Column: Image */}
       <div className="flex-1 w-full md:w-1/2">
         <Image
-          src="/uploads/2024/09/addons-r12.png"
+          src="/addons-r12.png"
           alt="Point of Sale Addons"
           width={558}
           height={558}
@@ -44,7 +44,7 @@ export default function Home() {
       <section className="flex justify-center gap-8 py-8">
         <div className="flex items-center justify-center">
           <img
-            src="https://accpick.co.za/wp-content/uploads/2024/09/tyre.png"
+            src="/tyre.png"
             alt="Tyre"
             className="w-20 h-auto"
           />
@@ -52,7 +52,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <img
-            src="https://accpick.co.za/wp-content/uploads/2024/09/radiator.png"
+            src="/radiator.png"
             alt="Radiator"
             className="w-20 h-auto"
           />
@@ -60,9 +60,25 @@ export default function Home() {
 
         <div className="flex items-center justify-center">
           <img
-            src="https://accpick.co.za/wp-content/uploads/2024/09/battery.png"
+            src="/battery.png"
             alt="Battery"
             className="w-20 h-auto"
+          />
+        </div>
+
+        <div className="flex items-center justify-center">
+          <img
+            src="/lpg.png"
+            alt="LPG"
+            className="w-20 h-auto"
+          />
+        </div>
+
+        <div className="flex items-center justify-center">
+          <img
+            src="/exhaust.png"
+            alt="Exhoust"
+            className="w-30 h-auto"
           />
         </div>
       </section>
