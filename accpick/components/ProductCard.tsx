@@ -23,11 +23,11 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="mt-auto">
           {product.oldPrice && (
             <p className="text-gray-400 line-through">
-              R{product.oldPrice.toLocaleString()}
+              R{product.oldPrice.toLocaleString('en-ZA')}
             </p>
           )}
           <p className="text-xl font-bold text-black">
-            R{product.price.toLocaleString()}
+            R{product.price.toLocaleString('en-ZA')}
           </p>
         </div>
       </div>

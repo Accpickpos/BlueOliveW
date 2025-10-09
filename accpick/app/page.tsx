@@ -10,9 +10,9 @@ export default function Home() {
      <>
       <Hero />
       <section className="grid grid-cols-1 bg-gray-100 text-gray-900 md:grid-cols-3 gap-6 p-8">
-        <FeatureCard title="Fast" description="Optimized with Next.js for speed." />
+        <FeatureCard title="Fast" description="Optimized for speed and performance." />
         <FeatureCard title="Scalable" description="Built to grow with your business." />
-        <FeatureCard title="Secure" description="Modern web security best practices." />
+        <FeatureCard title="Secure" description="Built to protect your data." />
       </section>
 
       <section className="flex flex-col md:flex-row items-center mt-3 gap-8 md:gap-16 px-6 md:px-16 py-12 border-2 border-gray-300 rounded-2xl">

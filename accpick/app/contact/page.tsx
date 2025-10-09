@@ -116,7 +116,7 @@ export default function ContactPage() {
 
           {/* Right side: image */}
           <div className="flex-1 flex items-center justify-center">
-            <img src="/bluelogo.jpeg" alt="Blue Logo" className="h-[80px]" />
+            <img src="/bluelogo.jpeg" alt="Blue Logo" className="h-[200px]" />
           </div>
         </div>
 
